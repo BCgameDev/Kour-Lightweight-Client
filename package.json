@@ -1,0 +1,25 @@
+{
+  "name": "kour-client",
+  "version": "0.0.1",
+  "description": "a light weight client to play kour io",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "electron": "ELECTRON_DISABLE_SECURITY_WARNINGS=true electron .",
+    "pack": "electron-builder --dir",
+    "dist": "electron-builder",
+    "postinstall": "electron-builder install-app-deps"
+  },
+  "author": "tmb",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^23.3.13",
+    "electron-builder": "^24.13.3",
+    "electron-packager": "^17.1.2"
+  },
+  "build": {
+    "appId": "your.id",
+    "icon": "./icon.ico"
+  }
+}
